@@ -1,0 +1,6 @@
+Detected languages and code types in `test.html`:
+
+- TypeScript / TSX (React component)
+- HTML-like JSX markup
+- Inline CSS classes (Tailwind CSS utility classes)
+- No separate CSS or plain JS blocks detected (component is React/TSX)

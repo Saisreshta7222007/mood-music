@@ -1,0 +1,103 @@
+.container {
+  max-width: 960px;
+  margin: 32px auto;
+  padding: 20px;
+}
+* {
+  box-sizing: border-box;
+}
+:root {
+  --rose-50: #fff1f2;
+  --rose-100: #ffe4e6;
+  --muted: #7c7287;
+}
+body {
+  font-family: Inter, system-ui, Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #fff1f2, #ffeef0);
+  color: #3b0b1e;
+}
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin: 0 0 8px;
+  color: #8b1230;
+}
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: 12px 0;
+}
+.quick button {
+  margin-right: 6px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+.card {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(139, 18, 48, 0.06);
+  border: 1px solid rgba(139, 18, 48, 0.06);
+}
+.cover {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 12px;
+  background-size: cover;
+  background-position: center;
+}
+.title {
+  font-weight: 700;
+  color: #6e1430;
+}
+.artist {
+  color: #6b4b55;
+  font-size: 13px;
+}
+.controls button,
+.card button {
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: #fff;
+  cursor: pointer;
+}
+.now-playing {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  background: linear-gradient(90deg, #fff, #fff7f8);
+  padding: 12px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 12px 30px rgba(139, 18, 48, 0.08);
+}
+.hidden {
+  display: none;
+}
+.progress-bg {
+  background: #ffeef0;
+  height: 8px;
+  width: 100%;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #fb7185, #f43f5e);
+  width: 0;
+}
+.like.active {
+  color: #ef4444;
+}

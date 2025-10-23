@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mood Music Recommender</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>AI Mood-Based Music Recommender</h1>
+        <p>Select your mood and play a sample track.</p>
+      </header>
+
+      <section class="controls">
+        <label for="moodSelect">Mood:</label>
+        <select id="moodSelect"></select>
+        <div id="quickButtons" class="quick"></div>
+      </section>
+
+      <section id="results" class="grid"></section>
+
+      <div id="nowPlaying" class="now-playing hidden">
+        <div class="now-info">
+          <div id="nowTitle" class="title"></div>
+          <div id="nowArtist" class="artist"></div>
+        </div>
+        <div class="now-controls">
+          <button id="nowStop">Stop</button>
+          <button id="nowToggle">Pause</button>
+        </div>
+        <div class="progress-wrap">
+          <div class="progress-bg"><div id="nowProgress" class="progress-fill"></div></div>
+        </div>
+      </div>
+
+      <footer>
+        <small>Static demo — open this file in a browser to run.</small>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
